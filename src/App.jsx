@@ -1,6 +1,8 @@
 import React from "react";
-import {Container} from "./components/Container/Сontainer";
+import { Catalog } from "./components/Catalog/Catalog";
+import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
+import { Navigation } from "./components/Navigation/Navigation";
 
 export const App = () => {
 
@@ -9,13 +11,11 @@ export const App = () => {
       <Header/>
 
       <main>
-        <nav>
-          <Container maks="leskin" className="navigation__container"/>
-        </nav>
-        <section></section>
+        <Navigation/>
+        <Catalog/>
       </main>
 
-      <footer></footer>
+      <Footer/>
     </>
   )
 }
